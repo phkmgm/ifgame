@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @Setter
 @Table(name = "community_info")
-public class CommunityInfo {
+public class Entity_CommunityInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ci_seq", nullable = false)
@@ -28,7 +28,7 @@ public class CommunityInfo {
     private String ciudatetime;
 
     @Builder
-    public CommunityInfo(Long ciseq, String ciname, String ciidatetime, String ciudatetime) {
+    public Entity_CommunityInfo(Long ciseq, String ciname, String ciidatetime, String ciudatetime) {
         this.ciseq = ciseq;
         this.ciname = ciname;
         this.ciidatetime = ciidatetime;

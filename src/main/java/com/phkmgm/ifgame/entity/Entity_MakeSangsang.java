@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @Setter
 @Table(name = "make_sangsang")
-public class MakeSangsang {
+public class Entity_MakeSangsang {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ms_seq", nullable = false)
@@ -43,7 +43,7 @@ public class MakeSangsang {
     private String msudatetime;
 
     @Builder
-    public MakeSangsang(Long msseq, String msuiid, String mstitle, String mstag, String msciseq, String mscontents, String msimgbackground, String msidatetime, String msudatetime) {
+    public Entity_MakeSangsang(Long msseq, String msuiid, String mstitle, String mstag, String msciseq, String mscontents, String msimgbackground, String msidatetime, String msudatetime) {
         this.msseq = msseq;
         this.msuiid = msuiid;
         this.mstitle = mstitle;
