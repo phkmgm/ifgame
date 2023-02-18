@@ -1,4 +1,4 @@
-<header class="header-area header-sticky">
+<header class="header-area header-sticky" xmlns:th="http://www.w3.org/1999/xhtml">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -18,11 +18,17 @@
           <!-- ***** Search End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="browse.html">Make</a></li>
-            <li><a href="details.html">Rank</a></li>
-            <li><a href="streams.html">Other</a></li>
-            <li><a href="profile.html">mondorai <img src="assets/images/profile-header.jpg" alt=""></a></li>
+            <li><a href="/home" class="active">Home</a></li>
+            <li><a href="/">Make</a></li>
+            <li><a href="/">Rank</a></li>
+            <li><a href="/">Other</a></li>
+            <div th:if="${mgmtest == '1'}">
+              <li><a href="profile.html">mondorai <img src="images/profile-header.jpg" alt=""></a></li>
+            </div>
+            <div th:unless="${mgmtest == '1'}">
+              <li><a href="/oauth2/authorization/google">google login <img src="images/profile-header.jpg" alt=""></a></li>
+            </div>
+
           </ul>
           <a class='menu-trigger'>
             <span>Menu</span>
