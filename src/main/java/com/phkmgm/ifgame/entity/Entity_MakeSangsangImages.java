@@ -18,8 +18,8 @@ public class Entity_MakeSangsangImages {
     @Column(name = "msi_seq", nullable = false)
     private Long msiseq;
 
-    @Column(name = "msi_us_seq", nullable = false)
-    private int msiusseq;
+    @Column(name = "msi_ms_seq", nullable = false)
+    private int msimsseq;
 
     @Column(name = "msi_img", nullable = false)
     private String msiimg;
@@ -31,9 +31,9 @@ public class Entity_MakeSangsangImages {
     private String msiidatetime;
 
     @Builder
-    public Entity_MakeSangsangImages(Long msiseq, int msiusseq, String msiimg, String msimemo, String msiidatetime) {
+    public Entity_MakeSangsangImages(Long msiseq, int msimsseq, String msiimg, String msimemo, String msiidatetime) {
         this.msiseq = msiseq;
-        this.msiusseq = msiusseq;
+        this.msimsseq = msimsseq;
         this.msiimg = msiimg;
         this.msimemo = msimemo;
         this.msiidatetime = msiidatetime;

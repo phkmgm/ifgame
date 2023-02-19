@@ -18,6 +18,9 @@ public class Entity_MakeSangsangMemo {
     @Column(name = "msm_seq", nullable = false)
     private Long msmseq;
 
+    @Column(name = "msm_ms_seq", nullable = false)
+    private Long msmmsseq;
+
     @Column(name = "msm_memo", nullable = false)
     private String msmmemo;
 
@@ -28,8 +31,9 @@ public class Entity_MakeSangsangMemo {
     private String msmidatetime;
 
     @Builder
-    public Entity_MakeSangsangMemo(Long msmseq, String msmmemo, String msmpos, String msmidatetime) {
+    public Entity_MakeSangsangMemo(Long msmseq, Long msmmsseq, String msmmemo, String msmpos, String msmidatetime) {
         this.msmseq = msmseq;
+        this.msmmsseq = msmmsseq;
         this.msmmemo = msmmemo;
         this.msmpos = msmpos;
         this.msmidatetime = msmidatetime;

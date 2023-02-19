@@ -1,4 +1,4 @@
-package com.phkmgm.ifgame.play;
+package com.phkmgm.ifgame.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
